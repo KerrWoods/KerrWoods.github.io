@@ -174,8 +174,8 @@
     </div>
     
     <div class="post-body post-content">
-        <p>每次百度或谷歌问题时，会看到各种各样的博客，不由自主的羡慕起来，。</p>
-<h2 id="一、搭建Hexo本地博客"><a href="#一、搭建Hexo本地博客" class="headerlink" title="一、搭建Hexo本地博客"></a>一、搭建Hexo本地博客</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。安装Hexo之前需要安装node.js和git,具体的安装方法请自行百度谷歌，都是傻瓜式安装。</p>
+        <p>老早之前就想搭建一个自己的博客，但出于各种原因都没能静下心来开搞，今天硬逼着自己弄完了，下面分享下搭建步骤。</p>
+<h2 id="一、搭建Hexo本地博客"><a href="#一、搭建Hexo本地博客" class="headerlink" title="一、搭建Hexo本地博客"></a>一、搭建Hexo本地博客</h2><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。安装Hexo之前需要安装node.js和git,具体的安装方法请自行百度谷歌，在此不再赘述。</p>
 <h4 id="使用npm安装Hexo"><a href="#使用npm安装Hexo" class="headerlink" title="使用npm安装Hexo"></a>使用npm安装Hexo</h4><blockquote>
 <p>npm install -g hexo-cli</p>
 </blockquote>
@@ -219,7 +219,20 @@
 <p>hexo g //生成静态页面<br>  hexo d //发布</p>
 </blockquote>
 <p>部署完就可以愉快的访问了。</p>
-<h2 id="四、绑定自己的域名"><a href="#四、绑定自己的域名" class="headerlink" title="四、绑定自己的域名"></a>四、绑定自己的域名</h2><h2 id="五、后记"><a href="#五、后记" class="headerlink" title="五、后记"></a>五、后记</h2><p>本次的教程就先到这里，这也是我第一次捣腾，对于主题、统计、留言等高级应用，等我摸索完了，再来和大家分享，此文也参考了网上多篇博文，在此表示感谢O(∩_∩)O。</p>
+<h2 id="四、绑定自己的域名"><a href="#四、绑定自己的域名" class="headerlink" title="四、绑定自己的域名"></a>四、绑定自己的域名</h2><p>此步骤非必须，因为我们的博客已经可以通过 GitHub 提供的地址访问了，但总感觉逼格不高，鉴于域名比较便宜就在阿里云购买了一个。域名买好后需要实名认证，这些都搞完后我们就可以进行下面的操作了：</p>
+<ul>
+<li><p>域名解析<br>记录类型： CNAME<br>主机记录： WWW<br>解析线路： 选默认就行<br>记录值： 为你的域名<br>TTL： 默认就行<br><img src="https://i.loli.net/2018/11/26/5bfbf4cedae43.png" alt="域名解析.png"></p>
+</li>
+<li><p>仓库设置</p>
+</li>
+</ul>
+<ol>
+<li>在 GitHub 上打开博客仓库设置<br><img src="https://i.loli.net/2018/11/26/5bfbfa365438e.png" alt="仓库设置1.png"></li>
+<li>在 Custom domain下，填写自己的域名，点击 save<br><img src="https://i.loli.net/2018/11/26/5bfbfa3652935.png" alt="仓库设置2.png"></li>
+<li>在站点目录的 source 文件夹下，创建并打开CNAME.txt，写入你的域名（如 <a href="http://www.xxx.com" target="_blank" rel="noopener">www.xxx.com</a> ),保存，然后将后缀改为CNAME</li>
+<li>等待几分钟后即可通过自己的域名访问博客了</li>
+</ol>
+<h2 id="五、后记"><a href="#五、后记" class="headerlink" title="五、后记"></a>五、后记</h2><p>本次的教程就先到这里，这也是我第一次捣腾，对于主题、统计、留言等高级应用，等我摸索完了，再来和大家分享，此文也参考了网上多篇博文，在此表示感谢O(∩_∩)O。<br>另外我的图片都是存在免费的图床网站上 <a href="https://sm.ms/" target="_blank" rel="noopener">SM.MS免费图床</a>，感兴趣的朋友可以看下，当然你也可以用其他图床或是用自己的服务器存储。</p>
 
     </div>
     
